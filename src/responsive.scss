@@ -1,0 +1,14 @@
+@import "./assets/sass/fonts.scss";
+@import "./assets/sass/theme.scss";
+
+@media (max-width:991px ){}
+@media (max-width:767px ){}
+@media (max-width:576px ){}
+@media (min-width:992px){
+    .navbar-nav{ 
+        .nav-link {
+            padding-left: 13px  !important;
+            padding-right: 13px !important;
+        }
+    }
+}
