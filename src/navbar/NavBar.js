@@ -1,13 +1,14 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 const NavBar = () => {
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");
   return (
-    <nav className="navbar navbar-expand-lg px-3">
-      <Link className="navbar-brand" to="#">
+    <nav className="navbar navbar-expand-lg px-3 navbar-design w-95">
+      <Link className="navbar-brand" to="/">
         Logo
       </Link>
       <Button
@@ -16,13 +17,13 @@ const NavBar = () => {
         data-bs-toggle="collapse"
         data-bs-target="#collapsibleNavbar"
       >
-        <span className="navbar-toggler-icon"></span>
+        <HiOutlineMenuAlt2 />
       </Button>
       <div
-        className="collapse navbar-collapse justify-content-end"
+        className="collapse navbar-collapse justify-content-end min-nav"
         id="collapsibleNavbar"
       >
-        <ul className="navbar-nav">
+        <ul className="navbar-nav nav_a">
           <li className="nav-item">
             <Link
               to="/"
@@ -33,6 +34,7 @@ const NavBar = () => {
               Home
             </Link>
           </li>
+
           <li className="nav-item">
             <Link
               to="/entertainment"
@@ -116,6 +118,11 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
+        <div className="view-des">
+          <Link to="/login" className="btn-design ">
+            Login
+          </Link>
+        </div>
       </div>
     </nav>
   );

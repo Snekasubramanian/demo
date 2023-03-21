@@ -6,3 +6,329 @@ html {
   padding: 0; 
   font-family: "f1";
 }
+a{
+  text-decoration: none;
+  color: $black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.w-90{
+  width: 90%;
+  margin: auto;
+}
+.w-95{
+  width: 95%;
+  margin: auto;
+}
+.w-80{
+  width: 80%;
+  margin: auto;
+}
+.w-70{
+  width: 70%;
+  margin: auto;
+}
+// common design //
+.d-flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.d-flex-al{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.d-flex-jc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.d-flex-al-jc{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.d-flex-al-jb{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+// common design end //
+// button design //
+.btn-design{
+  background: $black;
+  color: $white !important;
+  border-radius: 25px;
+  padding: 7px 17px;
+}
+.play-btn {
+  background: $white;
+  color: $primary1 !important;
+  border-radius: 25px;
+  padding: 5px 13px;
+  width: 140px;
+  display: flex;
+  align-items: center;  
+  svg{
+    color: $black;
+  }
+}
+.play-btns {
+  background: $white;
+  color: $primary1 !important;
+  border-radius: 25px;
+  padding: 5px 13px;
+  display: inline-block; 
+ 
+}
+// button design end//
+// navbar design //
+.navbar-design{
+  .navbar-toggler{
+    padding: 4px 7px;
+    background-color: $primary !important;
+    svg{
+      font-size: 25px;
+      color: $white !important;
+    }
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0;
+    border: 0;
+  }
+  .nav-link{
+    &.active{
+      color: $black;
+    }
+  }
+}
+//navbar page end //
+
+//home page design //
+//Banner  design //
+.home-pages{
+  .bane-desin{
+    background: linear-gradient(45deg, $primary1, $primary);
+    height: 100%;
+    padding: 20px 10px;
+  
+  .cont-des{
+    .vr-line{
+      color: $white;
+      margin: 10px 0;
+    h6{
+      margin: 0;
+      padding-left: 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .vr{
+      background-color: $white;
+      width: 2px; 
+      opacity: 1;
+    }
+   
+  }
+  .movi-bane{
+    h1{
+      color: $white;
+    }
+    p{
+      color: $white;
+      opacity: .8;
+    }
+    li{
+      color:$white;
+      margin: 8px 0;
+    }
+   }
+  }
+  .movie-box{
+    .image-box{ 
+      text-align: center;
+      position: relative;
+      background: $black;
+     border-radius: 8px;
+     margin: auto;
+
+    img{
+     opacity: .7;
+     border-radius: 8px;
+
+    }
+    .abs-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: $white;
+      font-size: 40px;
+    }
+  }
+  .pop-week{
+    h3{
+      color: $white;
+    }
+    .owl-desig{
+      text-align: center;
+      p{
+      color: $white;
+    margin: 10px 0;
+      }
+      img{
+        height: 20vh;
+    object-fit: cover;
+      }
+    }
+  }
+}
+  }
+  //entertaiment //
+  .home-enter{
+    h3{
+      text-align: center;
+      color: $primary;
+      text-shadow: 0px 3px 2px #222222;
+    }
+    a{
+      color: $black !important;
+    }
+    .pop-movie{
+      position: relative;
+      // height: 220px;
+      // overflow: hidden;
+      &::after{
+        position: absolute;
+        right: -12px;
+        top: 12px; 
+        content: "";
+        background: $white;
+        box-shadow: 0px 10px 20px rgb(48 124 255 / 15%);
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;  
+      }
+      img{
+        border-radius: 8px;
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+        min-height: 220px;
+      }
+      
+    }
+    .movi-time{
+      p{
+        span{
+          color: $primary;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+  //entertaiment end //
+  .founder-des{
+    background: #fe9d9e;
+    padding: 30px 15px;
+    .left-font{
+     
+    .fd-box{
+      background: linear-gradient(45deg, $primary1, $primary);
+      color: $white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: -49px;
+      position: relative;
+      margin-left: 40px;
+      width: 80%;
+    }
+  }
+  .about-home{
+    background: linear-gradient(45deg, $primary1, $primary);
+    color: $white;
+    padding: 20px ;
+    border-radius: 10px;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    h2{
+      text-shadow: 0px 3px 2px #222222; 
+      margin: 12px 0;
+    }
+    li{
+      margin: 10px 0px;
+      svg{
+        margin-right: 8px;
+      }
+    }
+    p{
+      text-align: justify;
+      line-height: 1.8;
+    }
+  
+  }
+
+  }
+
+  .lates-ses{
+    .owl-item{
+margin-bottom: 10px;
+    }
+  .news-session{
+    box-shadow: 0px 10px 20px rgb(48 124 255 / 15%); 
+    border-radius: 8px;  
+    // padding: 10px;
+  }
+  .news-design{
+    padding: 26px 10px 10px 10px;
+    position: relative;
+ 
+    p{
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      line-height: 1.8;
+      opacity: .6;
+    }
+    .new-dates{
+      background: $primary;
+      border-radius: 5px;
+      padding: 8px;
+      position: absolute;
+    top: -16px;
+    right: 16px;
+      h6{
+        color: $white;
+  margin-bottom: 0;
+      }
+    }
+  }
+
+}
+.capb-bg{
+  background: $black;
+  padding: 20px 15px;
+  text-align: center;
+  h5{
+    text-align: center;
+    color: $primary;
+    text-shadow: 0px 3px 2px #222222;
+  }
+  P{
+    width: 80%;
+    margin: auto;
+    color: $white;
+  }
+}
+}
+//Banner  design end //
+
+//home page design end//

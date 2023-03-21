@@ -1,9 +1,40 @@
 @import "./assets/sass/fonts.scss";
 @import "./assets/sass/theme.scss";
 
-@media (max-width:991px ){}
-@media (max-width:767px ){}
-@media (max-width:576px ){}
+@media (max-width:991px ){
+    .navbar-design{
+       .min-nav {
+            position: absolute;
+            right: -150px;
+            top: 50px;
+            background: #dadada;
+            padding: 10px 20px;
+            transition: .2s all;
+            &.show{
+            right: 0;
+            transition: .2s all;
+
+            }
+        }
+    } 
+}
+@media (max-width:767px ){
+  .about-home{
+    width: 100% !important;
+  }
+    
+}
+@media (max-width:576px ){
+    .movie-box{ 
+      .pop-week{  
+        .owl-desig{ 
+          img{
+            height: auto !important; 
+          }
+        }
+      }
+    }
+}
 @media (min-width:992px){
     .navbar-nav{ 
         .nav-link {
