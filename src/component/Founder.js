@@ -5,7 +5,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 const Founder = () => {
   return (
     <div className="founder-des my-3">
-      <div className="d-flex-wrap w-95">
+      <div className="d-flex-al w-95">
         <Col md={6} xs={12} className="px-2 my-2">
           <div className="left-font">
             <div className="img-fond ">

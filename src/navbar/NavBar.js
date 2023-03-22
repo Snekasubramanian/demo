@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
+
 const NavBar = () => {
   const location = useLocation();
   const { pathname } = location;
@@ -26,6 +27,8 @@ const NavBar = () => {
         <ul className="navbar-nav nav_a">
           <li className="nav-item">
             <Link
+              // data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
               to="/"
               className={
                 splitLocation[1] === "home" ? "nav-link active" : "nav-link"
@@ -118,7 +121,7 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
-        <div className="view-des">
+        <div className="view-des my-mlg-0 my-3">
           <Link to="/login" className="btn-design ">
             Login
           </Link>

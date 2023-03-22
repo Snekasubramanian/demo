@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Capture = () => {
@@ -14,7 +13,7 @@ const Capture = () => {
         text that is placed in a document or visual presentation.
       </p>
       <div className="view-des mt-4">
-        <Link to="/enter" className="play-btns ">
+        <Link to="/" className="play-btns ">
           Contact Us
         </Link>
       </div>

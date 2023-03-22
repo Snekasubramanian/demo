@@ -1,0 +1,11 @@
+@keyframes ripples {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.27), 0 0 0 0 rgba(255, 255, 255, 0.27);
+    }
+    80% {
+      box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
+    }
+    100% {
+      box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+    }
+  }

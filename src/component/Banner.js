@@ -3,7 +3,7 @@ import { Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Movie } from "../assets/img";
 import { BsPlayCircle } from "react-icons/bs";
-import  PopularCarousel  from "../component/PopularCarousel";
+import PopularCarousel from "../component/PopularCarousel";
 const Banner = () => {
   return (
     <div className="bane-desin">
@@ -38,16 +38,19 @@ const Banner = () => {
           </div>
         </Col>
         <Col md={6} xs={12} className="px-2 my-2">
-          <div className="movie-box  ">
-            <Col className="image-box" md={8} xs={10}>
-              <Image src={Movie} className="w-100" />
-              <div className="abs-box">
-                <BsPlayCircle />
-                <h6>Watch Trailer</h6>
-              </div>
-            </Col>
-            <PopularCarousel />
-          </div>
+          <Link to="/entertainment/movieplay">
+            <div className="movie-box  ">
+              <Col className="image-box" md={8} xs={11}>
+                <Image src={Movie} className="w-100" />
+                <div className="abs-box">
+                  <BsPlayCircle />
+                 
+                  <h6>Watch Trailer</h6>
+                </div>
+              </Col>
+              <PopularCarousel />
+            </div>
+          </Link>
         </Col>
       </div>
     </div>

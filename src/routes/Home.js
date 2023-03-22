@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Image } from "react-bootstrap";
 import TopHeading from "../component/TopHeading";
 import Banner from "../component/Banner";
 import PopularEntertainment from "../component/PopularEntertainment";
