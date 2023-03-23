@@ -4,6 +4,8 @@ const TopHeading = (props) => {
     <div className="top-head">
       {props.type === "home"}
       {props.type === "entertainment"}
+      {props.type === "talenthub"}
+      {props.type === "talentregister"}
     </div>
   );
 };

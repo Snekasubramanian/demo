@@ -20,6 +20,7 @@ const NavBar = () => {
       >
         <HiOutlineMenuAlt2 />
       </Button>
+
       <div
         className="collapse navbar-collapse justify-content-end min-nav"
         id="collapsibleNavbar"
@@ -27,8 +28,6 @@ const NavBar = () => {
         <ul className="navbar-nav nav_a">
           <li className="nav-item">
             <Link
-              // data-bs-toggle="collapse"
-              data-bs-target=".navbar-collapse.show"
               to="/"
               className={
                 splitLocation[1] === "home" ? "nav-link active" : "nav-link"
@@ -92,9 +91,9 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <Link
-              to="/talent"
+              to="/talenthub"
               className={
-                splitLocation[1] === "talent" ? "nav-link active" : "nav-link"
+                splitLocation[1] === "talenthub" ? "nav-link active" : "nav-link"
               }
             >
               Talent Hub
@@ -112,12 +111,14 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <Link
-              to="/auditons"
+              to="/auditions"
               className={
-                splitLocation[1] === "auditons" ? "nav-link active" : "nav-link"
+                splitLocation[1] === "auditions"
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
-              Auditons
+              Auditions
             </Link>
           </li>
         </ul>

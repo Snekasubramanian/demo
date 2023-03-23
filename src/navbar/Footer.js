@@ -60,13 +60,13 @@ const Footer = () => {
               </li>
 
               <li>
-                <Link to="/talent">Talent Hub</Link>
+                <Link to="/talenthub">Talent Hub</Link>
               </li>
               <li>
                 <Link to="/career">Career</Link>
               </li>
               <li>
-                <Link to="/auditons">Auditons</Link>
+                <Link to="/auditions">Auditions</Link>
               </li>
             </ul>
           </div>

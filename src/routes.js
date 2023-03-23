@@ -9,6 +9,10 @@ import Entertainment from "./routes/Entertainment";
 import MovieDetails from "./routes/MovieDetails";
 import MoviePlay from "./routes/MoviePlay";
 import ListMovie from "./routes/ListMovie";
+// talent page //
+import TalentLayout from "./Layout/TalentLayout";
+import TalentHub from "./routes/TalentHub";
+import TalentRegister from "./routes/TalentRegister";
 
 const ReactRoutes = () => {
   return (
@@ -28,6 +32,14 @@ const ReactRoutes = () => {
       <Route element={<Layout />}>
         <Route path="/entertainment/listmovie" element={<ListMovie />} />
       </Route>
+      {/* Talent Hub */}
+      <Route element={<TalentLayout />}>
+        <Route path="/talenthub" element={<TalentHub />} />
+      </Route>
+      <Route element={<TalentLayout />}>
+        <Route path="/talentregister" element={<TalentRegister />} />
+      </Route>
+      {/* Talent hub end */}
     </Routes>
   );
 };
