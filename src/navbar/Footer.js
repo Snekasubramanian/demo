@@ -1,6 +1,7 @@
 import React from "react";
-import { Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Col ,Image} from "react-bootstrap";
+import { Link } from "react-router-dom"; 
+import { Logo } from "../assets/img"; 
 import {
   FaFacebookF,
   FaInstagram,
@@ -15,7 +16,7 @@ const Footer = () => {
           <div className="fote-design">
             <ul>
               <li>
-                <Link to="/"></Link>
+                <Link to="/"><Image src={Logo} /></Link>
               </li>
               <li>
                 <Link to="mailto:support@gmail.com">Support@gmail.com</Link>

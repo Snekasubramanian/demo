@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
+import { Logo } from "../assets/img"; 
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-
 const NavBar = () => {
   const location = useLocation();
   const { pathname } = location;
@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg px-3 navbar-design w-95">
       <Link className="navbar-brand" to="/">
-        Logo
+        <Image src={Logo} />
       </Link>
       <Button
         className="navbar-toggler"

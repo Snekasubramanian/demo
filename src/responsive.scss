@@ -6,7 +6,7 @@
     .min-nav {
       position: absolute;
       right: -150px;
-      top: 50px;
+      top: 80px;
       background: #dadada;
       padding: 10px 20px;
       transition: 0.2s all;
@@ -73,8 +73,8 @@
 @media (min-width: 992px) {
   .navbar-nav {
     .nav-link {
-      padding-left: 11px !important;
-      padding-right: 11px !important;
+      padding-left: 12px !important;
+      padding-right: 12px !important;
     }
   }
 }

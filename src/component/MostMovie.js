@@ -1,11 +1,11 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import { Ship, Man } from "../assets/img";
+import { Ship, Man,Star } from "../assets/img";
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { AiFillStar } from "react-icons/ai";
+
 import { BsPlayCircle } from "react-icons/bs";
 
 const MostMovie = () => {
@@ -48,10 +48,10 @@ const MostMovie = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
@@ -69,10 +69,10 @@ const MostMovie = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>

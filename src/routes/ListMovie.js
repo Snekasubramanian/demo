@@ -1,15 +1,15 @@
 import React from "react";
 import { Image, Col } from "react-bootstrap";
-import { Ship, Man } from "../assets/img";
+import { Ship, Man, Action, Star } from "../assets/img";
 import { Link } from "react-router-dom";
-import { AiFillStar } from "react-icons/ai";
+
 import { BsPlayCircle } from "react-icons/bs";
 
 const ListMovie = () => {
   return (
     <div className="entertain-pages">
       <div className="ban-action">
-        <Image src={Ship} />
+        <Image src={Action} />
 
         <h3>Comedies</h3>
       </div>
@@ -28,10 +28,10 @@ const ListMovie = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width" /> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                  <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
@@ -49,10 +49,10 @@ const ListMovie = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width" /> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                  <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
@@ -70,10 +70,10 @@ const ListMovie = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width" /> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                  <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
@@ -91,10 +91,10 @@ const ListMovie = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width" /> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                  <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>

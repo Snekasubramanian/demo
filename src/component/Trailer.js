@@ -8,7 +8,7 @@ const Trailer = () => {
     <div className="poular-movie my-4 w-95">
       <h2>Trailers & Extras</h2>
       <div className=" d-flex-wrap my-2">
-        <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+        <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
           <Link to="/entertainment/movieplay">
             <div className="pop-enter">
               <Image src={Ship} />
@@ -24,7 +24,7 @@ const Trailer = () => {
             </div>
           </Link>
         </Col>
-        <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+        <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
           <Link to="/entertainment/movieplay">
             <div className="pop-enter">
               <Image src={Ship} />

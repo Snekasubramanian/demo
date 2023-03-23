@@ -37,7 +37,7 @@ const PopularEntertainment = () => {
               <div className="pop-movie">
                 <Image src={Ship} />
               </div>
-              <div className="movi-time mt-3">
+              <div className="movi-time mt-4">
                 <p>
                   1hr 54min <span>.Action</span>
                 </p>

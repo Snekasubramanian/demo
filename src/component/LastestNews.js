@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import { Ship } from "../assets/img";
+import { NewA, NewB, NewC } from "../assets/img";
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -31,19 +31,62 @@ const LastestNews = () => {
   return (
     <div className="home-enter my-4 w-95">
       <h3>We Have Best Lastest News</h3>
-      <div className="lates-ses my-4">
+      <div className="lates-ses my-4 px-3">
         <OwlCarousel className="owl-theme" loop margin={35} nav {...options}>
           <div class="item">
             <Link to="/news">
               <div className="news-session">
                 <div className="new-img">
-                  <Image src={Ship} />
+                  <Image src={NewA} />
                 </div>
                 <div className="news-design">
                   <div className="new-dates">
                     <h6>Movie - 25th Jan 23</h6>
                   </div>
-                  <h5>New Broken Dolls poster shared by movie Director</h5>
+                  <h5>New Broken Dolls poster shared
+                    by movie director</h5>
+                  <p>
+                    Lorem ipsum, in graphical and textual context, refers to
+                    filler text that is placed in a document or visual
+                    presentation. Lorem ipsum is derived from the Latin "dolorem
+                    ipsum" roughly translated as "pain itself.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div class="item">
+            <Link to="/news">
+              <div className="news-session">
+                <div className="new-img">
+                  <Image src={NewB} />
+                </div>
+                <div className="news-design">
+                  <div className="new-dates">
+                    <h6>Movie - 25th Jan 23</h6>
+                  </div>
+                  <h5>Continue Watching Video On Demand graphical and textual </h5>
+                  <p>
+                    Lorem ipsum, in graphical and textual context, refers to
+                    filler text that is placed in a document or visual
+                    presentation. Lorem ipsum is derived from the Latin "dolorem
+                    ipsum" roughly translated as "pain itself.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div class="item">
+            <Link to="/news">
+              <div className="news-session">
+                <div className="new-img">
+                  <Image src={NewC} />
+                </div>
+                <div className="news-design">
+                  <div className="new-dates">
+                    <h6>Serial - 25th Jan 23</h6>
+                  </div>
+                  <h5>The Best Live Streaming Equipment For Every Budget</h5>
                   <p>
                     Lorem ipsum, in graphical and textual context, refers to
                     filler text that is placed in a document or visual

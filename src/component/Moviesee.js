@@ -1,13 +1,13 @@
 import React from "react";
 import { Image, Col } from "react-bootstrap";
-import { Ship, Man } from "../assets/img";
+import { Ship, Man, Star } from "../assets/img";
 import { Link } from "react-router-dom";
-import { AiFillStar } from "react-icons/ai";
+
 import { BsPlayCircle } from "react-icons/bs";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 const Moviesee = () => {
   return (
-    <div className="poular-movie my-4 w-95">
+    <div className="poular-movie my-4 w-95img-width">
       <div className="rep-movie">
         <div className="d-flex-al-jb px-3 seel-movie">
           <h3>Comedies</h3>
@@ -16,7 +16,7 @@ const Moviesee = () => {
           </Link>
         </div>
         <div className=" d-flex-wrap my-2">
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Ship} />
@@ -29,15 +29,15 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
           </Col>
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Man} />
@@ -50,15 +50,15 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
           </Col>
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Ship} />
@@ -71,15 +71,15 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
           </Col>
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Man} />
@@ -92,10 +92,10 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
@@ -110,7 +110,7 @@ const Moviesee = () => {
           </Link>
         </div>
         <div className=" d-flex-wrap my-2">
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Man} />
@@ -123,15 +123,15 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
           </Col>
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Ship} />
@@ -144,15 +144,15 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
           </Col>
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Man} />
@@ -165,15 +165,15 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
           </Col>
-          <Col className="px-3 my-2" md={3} xs={12} sm={6}>
+          <Col className="px-3 my-2" lg={3} md={4} xs={12} sm={6} >
             <Link to="/entertainment/moviedetails">
               <div className="pop-enter">
                 <Image src={Ship} />
@@ -186,10 +186,10 @@ const Moviesee = () => {
                   <div className="d-flex-al-jb">
                     <p>1hr 54min</p>
                     <p className="d-flex-al">
-                      <AiFillStar /> 5.6
+                      <Image src={Star} className="img-width"/> 5.6
                     </p>
                   </div>
-                  <p>Drama - 12 Feb 23</p>
+                <h6>Drama - 12 Feb 23</h6>
                 </div>
               </div>
             </Link>
