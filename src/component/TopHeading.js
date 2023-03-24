@@ -6,6 +6,7 @@ const TopHeading = (props) => {
       {props.type === "entertainment"}
       {props.type === "talenthub"}
       {props.type === "talentregister"}
+      {props.type === "news"}
     </div>
   );
 };

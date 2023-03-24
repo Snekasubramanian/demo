@@ -7,7 +7,7 @@ import { BsPlayCircle } from "react-icons/bs";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 const Moviesee = () => {
   return (
-    <div className="poular-movie my-4 w-95img-width">
+    <div className="poular-movie my-4 w-95 img-width">
       <div className="rep-movie">
         <div className="d-flex-al-jb px-3 seel-movie">
           <h3>Comedies</h3>

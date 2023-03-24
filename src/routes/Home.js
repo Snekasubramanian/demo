@@ -3,7 +3,7 @@ import TopHeading from "../component/TopHeading";
 import Banner from "../component/Banner";
 import PopularEntertainment from "../component/PopularEntertainment";
 import Founder from "../component/Founder";
-import LastestNews from "../component/LastestNews";
+import LatestNews from "../component/LatestNews";
 import Capture from "../component/Capture";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
       <Banner />
       <PopularEntertainment />
       <Founder />
-      <LastestNews />
+      <LatestNews />
       <Capture />
     </div>
   );

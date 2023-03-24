@@ -6,9 +6,7 @@ const TalentHub = () => {
   return (
     <div className="talenthub-pages">
       <TopHeading type="talenthub" />
-
       <Filters />
-
       <FindTalent />
     </div>
   );

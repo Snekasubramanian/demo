@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button, Image } from "react-bootstrap";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { Logo } from "../assets/img";
@@ -8,6 +8,7 @@ const TalentNavBar = () => {
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");
+  const navigate = useNavigate();
 
   return (
     <nav className="navbar navbar-expand-lg px-3 navbar-design w-95">
@@ -29,19 +30,21 @@ const TalentNavBar = () => {
       >
         <ul className="navbar-nav nav_a">
           <li className="nav-item">
-            <Link
-              to="/"
+            <button data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+              onClick={() => navigate("/")}
               className={
                 splitLocation[1] === "home" ? "nav-link active" : "nav-link"
               }
             >
               Home
-            </Link>
+            </button>
           </li>
 
           <li className="nav-item">
-            <Link
-              to="/talenthub"
+            <button data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+              onClick={() => navigate("/talenthub")}
               className={
                 splitLocation[1] === "talenthub"
                   ? "nav-link active"
@@ -49,11 +52,12 @@ const TalentNavBar = () => {
               }
             >
               Talent Hub
-            </Link>
+            </button>
           </li>
           <li className="nav-item">
-            <Link
-              to="/talentregister"
+            <button data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+              onClick={() => navigate("/talentregister")} 
               className={
                 splitLocation[1] === "talentregister"
                   ? "nav-link active"
@@ -61,7 +65,7 @@ const TalentNavBar = () => {
               }
             >
               Talent Register
-            </Link>
+            </button>
           </li>
         </ul>
       </div>
