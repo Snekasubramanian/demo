@@ -58,6 +58,13 @@
       }
     }
   }
+  .live-shows {
+    .vid-play { 
+      iframe { 
+        height: 300px;
+      }
+    }
+  }
 }
 @media (max-width: 576px) {
   .movie-box {

@@ -12,6 +12,8 @@ import ListMovie from "./routes/ListMovie";
 import News from "./routes/News";
 import NewsView from "./routes/NewsView";
 import About from "./routes/About";
+import Live from "./routes/Live";
+import ShowsView from "./routes/ShowsView";
 // talent page //
 import TalentLayout from "./Layout/TalentLayout";
 import TalentHub from "./routes/TalentHub";
@@ -45,6 +47,12 @@ const ReactRoutes = () => {
       </Route>
       <Route element={<Layout />}>
         <Route path="/about" element={<About />} />
+      </Route>
+      <Route element={<Layout />}>
+        <Route path="/live" element={<Live />} />
+      </Route>
+      <Route element={<Layout />}>
+        <Route path="/live/showsview" element={<ShowsView />} />
       </Route>
       {/* Talent Hub */}
       <Route element={<TalentLayout />}>

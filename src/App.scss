@@ -914,21 +914,7 @@ ul {
     }
   }
 
-  .baner-design {
-    position: relative;
 
-    h5 {
-      position: absolute;
-      top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      font-size: 30px;
-      color: $white;
-    }
-  }
 
   .profi-box {
     img {
@@ -991,6 +977,22 @@ ul {
         }
       }
     }
+  }
+}
+
+.baner-design {
+  position: relative;
+
+  h5 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    color: $white;
   }
 }
 
@@ -1099,6 +1101,145 @@ ul {
       line-height: 1.9;
     }
   }
+
+  .cou-des {
+    text-align: center;
+
+    svg {
+      font-size: 30px;
+      color: $primary;
+    }
+
+    h5 {
+      margin: 10px 0;
+      font-size: 25px;
+    }
+  }
+
+
+}
+
+.test-design {
+  background: linear-gradient(45deg, $primary1, $primary);
+  height: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  color: $white;
+
+  .test-movie {
+    position: relative;
+
+    img {
+      width: 100px !important;
+      height: 100px;
+      border-radius: 100%;
+      margin: auto;
+    }
+
+    svg {
+      color: $white;
+      background-color: #1a1d24;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      padding: 10px;
+      position: absolute;
+      bottom: -10px;
+      left: 45%;
+    }
+  }
+
+  h5 {
+    color: $white;
+    font-family: "f2";
+    font-size: 15px;
+  }
+
+  h6 {
+    color: $white;
+    font-size: 13px;
+    opacity: .7;
+  }
+
+  p {
+    color: $white;
+    font-size: 18px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-height: 1.8;
+  }
+}
+
+.des-monal {
+  .modal-header {
+    background: transparent;
+    padding: 0;
+    position: absolute;
+    border: 0;
+    background: $white;
+    right: -4px;
+    top: -10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    .btn-close {
+      padding: 0;
+      position: absolute;
+      left: 8px;
+      opacity: 1;
+    }
+  }
 }
 
 // About us  end//
+// live shows//
+.live-shows {
+  .fit-ction {
+    h3 {
+      color: $primary;
+
+    }
+
+    .yout-vied {
+      box-shadow: 0px 10px 20px rgb(48 124 255 / 15%);
+      border-radius: 8px;
+      padding: 10px;
+      // height: 250px;
+      // overflow: hidden;
+      // border: 1px solid rgb(48 124 255 / 35%);
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      h5 {
+        margin-top: 10px;
+        text-align: center;
+        color: $black;
+        font-family: "f2";
+      }
+    }
+  }
+
+  .vid-play {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+
+    iframe {
+      width: 90%;
+      height: 500px;
+    }
+  }
+}
+
+// live shows end//

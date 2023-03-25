@@ -22,3 +22,5 @@ export const ProfC = require("./profile-c.jpg");
 export const ProfD = require("./profile-d.jpg"); 
 export const NewsBg = require("./newsbg.jpg"); 
 export const Abouts = require("./abouts.png"); 
+export const TestImg = require("./test.jpg"); 
+export const TestA = require("./test-a.jpg"); 
