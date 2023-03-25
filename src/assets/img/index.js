@@ -5,6 +5,7 @@ export const Man = require("./man.jpeg");
 export const NewA = require("./new-a.jpg");
 export const NewB = require("./new-b.jpg");
 export const NewC = require("./new-c.jpg");
+export const NewD = require("./new-d.jpg");
 export const About = require("./prof.PNG");
 export const Action = require("./action.jpg");
 export const TalentBg = require("./talent.jpg");
