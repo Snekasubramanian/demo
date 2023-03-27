@@ -14,10 +14,11 @@ const Capture = () => {
           text that is placed in a document or visual presentation.
         </p>
         <div className="view-des mt-4">
-          <Link to="/" className="play-btns ">
+          <Link to="/talentregister" className="play-btns ">
             Contact Us
           </Link>
         </div>
+       
       </div>
     </div>
   );

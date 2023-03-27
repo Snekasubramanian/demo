@@ -1,26 +1,42 @@
 import React from "react";
-import { Image, Col } from "react-bootstrap";
+import { Image, Col, Form, Button } from "react-bootstrap";
 import { LoginImg, Logo } from "../assets/img";
 import { Link } from "react-router-dom";
 const Login = () => {
     return (
-        <div className="login-page  d-flex-wrap">
-            <Col md={5} xs={12}>
-                <div className="logi-des">
-                    <Image src={LoginImg} className="w-90" />
-                </div>
-            </Col>
-            <Col md={7} xs={12} className="px-3 my-2">
-                <div class="login-form  ">
-                    <Link href="/home">
-                        <Image src={Logo} class="" />
-                    </Link>
-                    <h5>Login with Riofin</h5>
-                    <label class="my-2">Enter your registered phone number</label>
-                    <input maxlength="10" type="number" class="form-control" placeholder="Mobile Number" />
-                    <Link class="login-btn" to="/"> Continue </Link>
-                </div>
-            </Col>
+        <div className="login-page  ">
+            <div className=" login-ses d-flex-al-jc">
+                <Col md={5} xs={12}>
+                    <div className="logi-des">
+                        <Image src={LoginImg} className="w-90" />
+                    </div>
+                </Col>
+                <Col md={5} xs={11} className=" my-3">
+                    <div className="login-form  ">
+                        <Link to="/"  >
+                            <Image src={Logo} className="" />
+                        </Link>
+                        <Form className="">
+                            <h5>Login with Nanban</h5>
+                            <div className="my-2">
+                                <label >Enter your registered  Email</label>
+                                <input type="Email" className="form-control" placeholder="E-mail" />
+                            </div>
+                            <div className="my-2">
+                                <label >Enter your registered  Password</label>
+                                <input type="text" className="form-control" placeholder="Password" />
+                            </div>
+
+                            <div className="  my-3" >
+                                <Link className="btn-design " to="/"> Continue </Link>
+                            </div>
+                            <h6>Don't have an account?
+                                <Link className=" " to="/talentregister">Register</Link>
+                            </h6>
+                        </Form>
+                    </div>
+                </Col>
+            </div>
         </div>
     );
 };

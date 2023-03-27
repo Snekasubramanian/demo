@@ -1193,6 +1193,8 @@ ul {
 }
 
 .des-monal {
+
+
   .modal-header {
     background: transparent;
     padding: 0;
@@ -1388,6 +1390,7 @@ ul {
   h5 {
     color: $primary;
     text-align: center;
+
   }
 
   label {
@@ -1405,6 +1408,7 @@ ul {
 }
 
 .dest-monal {
+
   .modal-header {
     background: transparent;
     padding: 0;
@@ -1528,17 +1532,131 @@ ul {
 .login-page {
   height: 100vh;
 
-  .logi-des {
-    background: url(./assets/img/log-bg.png)no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 100%;
-    left: 0;
-    padding: 100px 50px; 
-    text-align: center;
-    top: 0; 
+  .login-ses {
     width: 100%;
+    height: 100%;
+
+    .logi-des {
+      background: url(./assets/img/log-bg.png)no-repeat;
+      background-size: cover;
+      display: flex;
+      height: 100%;
+      left: 0;
+      padding: 100px 50px;
+      text-align: center;
+      top: 0;
+      width: 40%;
+      position: fixed;
+    }
+
+    .login-form {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 10px 40px rgb(48 124 255 / 15%);
+      padding: 20px;
+      text-align: center;
+
+      label {
+        display: flex;
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      h5 {
+        color: $primary;
+        text-align: start;
+        margin: 10px 0;
+      }
+
+
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .form-control {
+    &:focus {
+      border-color: #4b4b4b;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+    }
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
+  h6 {
+    font-family: "f2";
+
+    a {
+      color: $primary;
+      margin-left: 5px;
+    }
   }
 }
 
 // login page  end//
+// flot icon//
+.social_icon {
+  position: fixed;
+  right: 0;
+  bottom: 5%;
+  z-index: 111;
+
+  .en_quiry {
+    font-size: 15px;
+    background: linear-gradient($primary, #526ff9);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    position: absolute;
+    bottom: 85px;
+    right: 0;
+    justify-content: center;
+
+    svg {
+      font-size: 20px;
+    }
+  }
+}
+
+.flot-monal {
+  .modal-dialog {
+    margin: auto;
+    max-width: 350px;
+  }
+
+  .modal-header {
+    background: transparent;
+    padding: 0;
+    position: absolute;
+    border: 0;
+    background: $primary;
+    right: -9px;
+    top: -10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    .btn-close {
+      padding: 0;
+      position: absolute;
+      left: 7px;
+      opacity: 1;
+      filter: invert(1);
+    }
+  }
+}
+
+
+// flot icon//

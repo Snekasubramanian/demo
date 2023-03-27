@@ -1,13 +1,14 @@
 import React from "react";
-import { Col ,Image} from "react-bootstrap";
-import { Link } from "react-router-dom"; 
-import { Logo } from "../assets/img"; 
+import { Col, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Logo } from "../assets/img";
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaPinterestP,
 } from "react-icons/fa";
+import Floated from "../component/Floated";
 const Footer = () => {
   return (
     <div className="footer-design">
@@ -101,6 +102,7 @@ const Footer = () => {
           </div>
         </Col>
       </div>
+      <Floated />
     </div>
   );
 };
