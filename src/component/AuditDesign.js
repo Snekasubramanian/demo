@@ -9,7 +9,7 @@ const AuditDesign = () => {
     return (
         <div className="aud-design my-4 w-95">
             <div className="d-flex-wrap ">
-                <Col md={4} xs={12} className="my-2 px-3">
+                <Col lg={4} md={6} xs={12} className="my-2 px-3">
                     <Link to="/auditions/auditionsview ">
                         <div className="auditions-session">
                             <div className="auditions-img">
@@ -31,7 +31,7 @@ const AuditDesign = () => {
                         </div>
                     </Link>
                 </Col>
-                <Col md={4} xs={12} className="my-2 px-3">
+                <Col lg={4} md={6} xs={12} className="my-2 px-3">
                     <Link to="/auditions/auditionsview ">
                         <div className="auditions-session">
                             <div className="auditions-img">
@@ -53,7 +53,7 @@ const AuditDesign = () => {
                         </div>
                     </Link>
                 </Col>
-                <Col md={4} xs={12} className="my-2 px-3">
+                <Col lg={4} md={6} xs={12} className="my-2 px-3">
                     <Link to="/auditions/auditionsview ">
                         <div className="auditions-session">
                             <div className="auditions-img">
@@ -75,7 +75,7 @@ const AuditDesign = () => {
                         </div>
                     </Link>
                 </Col>
-                <Col md={4} xs={12} className="my-2 px-3">
+                <Col lg={4} md={6} xs={12} className="my-2 px-3">
                     <Link to="/auditions/auditionsview ">
                         <div className="auditions-session">
                             <div className="auditions-img">
@@ -97,7 +97,7 @@ const AuditDesign = () => {
                         </div>
                     </Link>
                 </Col>
-                <Col md={4} xs={12} className="my-2 px-3">
+                <Col lg={4} md={6} xs={12} className="my-2 px-3">
                     <Link to="/auditions/auditionsview ">
                         <div className="auditions-session">
                             <div className="auditions-img">
@@ -119,7 +119,7 @@ const AuditDesign = () => {
                         </div>
                     </Link>
                 </Col>
-                <Col md={4} xs={12} className="my-2 px-3">
+                <Col lg={4} md={6} xs={12} className="my-2 px-3">
                     <Link to="/auditions/auditionsview ">
                         <div className="auditions-session">
                             <div className="auditions-img">

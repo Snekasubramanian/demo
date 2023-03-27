@@ -31,7 +31,7 @@ const ResentAudition = () => {
     };
     return (
         <div className="aud-design my-4  ">
-            <h3>Resent Post</h3>
+            <h3>You may also like this </h3>
             <div className="  my-3">
                 <OwlCarousel className="owl-theme" loop margin={30} nav {...options}>
                     <div className="item">

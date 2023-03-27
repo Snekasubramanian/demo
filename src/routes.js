@@ -16,6 +16,10 @@ import Live from "./routes/Live";
 import ShowsView from "./routes/ShowsView";
 import Auditions from "./routes/Auditions";
 import AuditionsView from "./routes/AuditionsView";
+import Career from "./routes/Career";
+import CareerView from "./routes/CareerView";
+import Privacy from "./routes/Privacy";
+import Login from "./routes/Login";
 // talent page //
 import TalentLayout from "./Layout/TalentLayout";
 import TalentHub from "./routes/TalentHub";
@@ -25,7 +29,10 @@ import TalentRegister from "./routes/TalentRegister";
 
 const ReactRoutes = () => {
   return (
-    <Routes>
+    <Routes> 
+       
+        <Route path="/login" element={<Login />} />
+       
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
       </Route>
@@ -61,6 +68,15 @@ const ReactRoutes = () => {
       </Route>
       <Route element={<Layout />}>
         <Route path="/auditions/auditionsview" element={<AuditionsView />} />
+      </Route>
+      <Route element={<Layout />}>
+        <Route path="/career" element={<Career />} />
+      </Route>
+      <Route element={<Layout />}>
+        <Route path="/career/careerview" element={<CareerView />} />
+      </Route>
+      <Route element={<Layout />}>
+        <Route path="/privacy" element={<Privacy />} />
       </Route>
       {/* Talent Hub */}
       <Route element={<TalentLayout />}>

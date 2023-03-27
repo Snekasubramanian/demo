@@ -37,6 +37,11 @@ ul {
   margin: auto;
 }
 
+.w-50 {
+  width: 50% !important;
+  margin: auto;
+}
+
 .w-95 {
   width: 95%;
   margin: auto;
@@ -1011,22 +1016,24 @@ ul {
 
 // talet hub end//
 // news design //
-.news-page {
-  .bage-img {
-    position: relative;
+.bage-img {
+  position: relative;
 
-    h5 {
-      position: absolute;
-      top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      font-size: 30px;
-      color: $white;
-    }
+  h5 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    color: $white;
   }
+}
+
+.news-page {
+
 
   .other-news {
     h3 {
@@ -1213,6 +1220,10 @@ ul {
 
 // About us  end//
 // live shows//
+.owl-item {
+  margin-bottom: 30px;
+}
+
 .live-shows {
   .fit-ction {
     h3 {
@@ -1220,9 +1231,7 @@ ul {
 
     }
 
-    .owl-item {
-      margin-bottom: 30px;
-    }
+
 
     .yout-vied {
       box-shadow: 0px 10px 20px rgb(48 124 255 / 15%);
@@ -1335,6 +1344,7 @@ ul {
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-line-clamp: 2;
+        line-height: 1.6;
       }
 
       p {
@@ -1354,10 +1364,11 @@ ul {
     h6 {
       margin-bottom: 0;
       color: $primary;
+      font-size: 14px;
     }
 
     svg {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 
@@ -1373,4 +1384,161 @@ ul {
   }
 }
 
+.audi-form {
+  h5 {
+    color: $primary;
+    text-align: center;
+  }
+
+  label {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .form-control {
+    padding: 12px 15px;
+    box-shadow: 0px 10px 40px rgb(48 124 255 / 15%);
+    font-size: 13px;
+    border: 0;
+  }
+
+}
+
+.dest-monal {
+  .modal-header {
+    background: transparent;
+    padding: 0;
+    position: absolute;
+    border: 0;
+    background: $primary;
+    right: -9px;
+    top: -10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    .btn-close {
+      padding: 0;
+      position: absolute;
+      left: 7px;
+      opacity: 1;
+      filter: invert(1);
+    }
+  }
+}
+
 // auditions design end//
+// carrer design //
+.care-page {
+  .carer-design {
+    box-shadow: 0px 10px 40px rgb(48 124 255 / 15%);
+    padding: 20px;
+    border: 1px solid rgb(48 124 255 / 0%);
+    border-radius: 10px;
+    transition: .3s all;
+
+    &:hover {
+      border: 1px solid rgb(48 124 255 / 35%);
+      transition: .3s all;
+    }
+
+
+
+    h6 {
+      color: $black;
+    }
+
+    p {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      line-height: 1.8;
+      opacity: 0.6;
+      color: #1D1A1A !important;
+    }
+
+    .car-boxs {
+      // border: 1px solid $black;
+      // padding: 5px;
+      // border-radius: 20px;
+
+      h6 {
+        margin-bottom: 0;
+      }
+
+      svg {
+        color: $primary;
+        margin: 0 4px;
+      }
+    }
+  }
+
+  .care-view {
+    h4 {
+      color: $primary;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 2;
+      font-size: 15px;
+    }
+
+    h5 {
+      font-family: "f2";
+      font-size: 18px;
+    }
+
+
+  }
+}
+
+// carrer design end //
+// privacy img//
+.privacy-page {
+  .pr-img {
+    text-align: center;
+  }
+
+  ul {
+    li {
+      margin: 13px 0;
+      text-align: justify;
+      font-size: 15px;
+      // display: flex;
+      // align-items: start;
+
+      svg {
+        font-size: 30px;
+        color: $primary;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// privacy end//@at-root
+// login page //
+.login-page {
+  height: 100vh;
+
+  .logi-des {
+    background: url(./assets/img/log-bg.png)no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    left: 0;
+    padding: 100px 50px; 
+    text-align: center;
+    top: 0; 
+    width: 100%;
+  }
+}
+
+// login page  end//

@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { Form, Button, Modal } from "react-bootstrap";
-const AuditModal = () => {
-    const [auditModal, setAuditModal] = useState(false);
+const JobModal = () => {
+    const [jobModal, setJobModal] = useState(false)
 
     return (
         <div className="modal-de">
-            <Button className="btn-design" onClick={() => setAuditModal(true)}>Get to Auditions</Button>
+            <Button className="btn-design my-3" onClick={() => setJobModal(true)}>Apply Now</Button>
             <Modal
                 className="dest-monal"
-                show={auditModal}
+                show={jobModal}
                 size="md"
                 centered
-                onHide={() => setAuditModal(false)}
+                onHide={() => setJobModal(false)}
                 aria-labelledby="contained-modal-title-vcenter"
             >
                 <Modal.Header closeButton></Modal.Header>
@@ -22,7 +22,7 @@ const AuditModal = () => {
                             <label htmlFor="">Name</label>
                             <input
                                 className="form-control"
-                                placeholder="Enter your name "
+                                placeholder="Name "
                                 type="name"
                                 name="name"
                             />
@@ -31,7 +31,7 @@ const AuditModal = () => {
                             <label htmlFor="">Email ID</label>
                             <input
                                 className="form-control"
-                                placeholder="Enter your E-mail "
+                                placeholder="E-mail "
                                 type="email"
                                 name="email"
                             />
@@ -40,30 +40,54 @@ const AuditModal = () => {
                             <label htmlFor="">Mobile Number</label>
                             <input
                                 className="form-control"
-                                placeholder="Enter your MOB "
+                                placeholder="MOB "
                                 type="number"
                                 name="mobile"
                             />
                         </div>
                         <div className="my-2">
-                            <label htmlFor="">Audition Titile</label>
+                            <label htmlFor="">Qualification</label>
                             <input
                                 className="form-control"
-                                placeholder="Enter the Audition Titile "
+                                placeholder="Qualification "
                                 type="text"
                             />
                         </div>
                         <div className="my-2">
-                            <label htmlFor="">Audition Titile</label>
+                            <label htmlFor="">Experience</label>
+                            <input
+                                className="form-control"
+                                placeholder="YOE"
+                                type="text"
+                            />
+                        </div>
+                        <div className="my-2">
+                            <label htmlFor="">Expected Salary</label>
+                            <input
+                                className="form-control"
+                                placeholder="Expected Salary"
+                                type="text"
+                            />
+                        </div>
+                        <div className="my-2">
+                            <label htmlFor="">Address</label>
                             <textarea
                                 rows={2}
                                 className="form-control"
-                                placeholder="Type here ..."
+                                placeholder="Current Address"
                             ></textarea>
+                        </div>
+                        <div className="my-2">
+                            <label htmlFor="">Upload Resume</label>
+                            <input
+                                className="form-control"
+                                placeholder="Expected Salary"
+                                type="file"
+                            />
                         </div>
                         <div className="view-des mt-4  ">
                             <Button type="Submit" className="btn-design ">
-                               Submit
+                                Submit
                             </Button>
                         </div>
                     </Form>
@@ -73,4 +97,4 @@ const AuditModal = () => {
 
     );
 };
-export default AuditModal;
+export default JobModal;

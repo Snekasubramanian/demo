@@ -25,3 +25,6 @@ export const NewsBg = require("./newsbg.jpg");
 export const Abouts = require("./abouts.png"); 
 export const TestImg = require("./test.jpg"); 
 export const TestA = require("./test-a.jpg"); 
+export const CarViw = require("./img.jpg"); 
+export const PrivacyImg = require("./privacy.png"); 
+export const LoginImg = require("./login.png"); 
