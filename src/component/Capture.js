@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Capture = () => {
   return (
-    <div className="capb-bg my-3">
+    <div className="capb-bg mt-3">
       <div>
         <h5>Ready To Capture your Brand vision ?</h5>
         <p>

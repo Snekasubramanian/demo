@@ -8,7 +8,7 @@ import {
   FaLinkedinIn,
   FaPinterestP,
 } from "react-icons/fa";
-import Floated from "../component/Floated";
+// import Floated from "../component/Floated";
 const Footer = () => {
   return (
     <div className="footer-design">
@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
         </Col>
       </div>
-      <Floated />
+      {/* <Floated /> */}
     </div>
   );
 };

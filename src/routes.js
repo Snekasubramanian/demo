@@ -26,18 +26,18 @@ import TalentHub from "./routes/TalentHub";
 import TalentView from "./routes/TalentView";
 import ProfileView from "./routes/ProfileView";
 import TalentRegister from "./routes/TalentRegister";
-import PrivateRoutes from "./constants/Services/PrivateRoutes";
-import useToken from "./constants/Storage/useToken";
-import { ErrorPage } from "./assets/img";
+// import PrivateRoutes from "./constants/Services/PrivateRoutes";
+// import useToken from "./constants/Storage/useToken";
+// import { ErrorPage } from "./assets/img";
 
 const ReactRoutes = () => {
   const navigate = useNavigate();
-  const { token } = useToken();
+  
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
 
-      <Route element={<PrivateRoutes token={token} />}>
+      <Route >
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
         </Route>
@@ -98,17 +98,7 @@ const ReactRoutes = () => {
         </Route>
       </Route>
       {/* Talent hub end */}
-      <Route
-        path="*"
-        index
-        element={
-          <img
-            src={ErrorPage}
-            style={{ width: "100%" }}
-            onClick={() => navigate("/")}
-          />
-        }
-      />
+     
       <Route element={<TalentLayout />}>
         <Route path="/talentregister" element={<TalentRegister />} />
       </Route>

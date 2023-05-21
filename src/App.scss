@@ -8,6 +8,8 @@ html {
   padding: 0;
   font-family: "f1";
   overflow-x: hidden;
+  background: $black;
+  color: $white;
 }
 
 h1,
@@ -24,7 +26,7 @@ p {
 
 a {
   text-decoration: none;
-  color: $black;
+  color: $white;
 }
 
 ul {
@@ -92,8 +94,8 @@ ul {
 // common design end //
 // button design //
 .btn-design {
-  background: $black  !important;
-  color: $white  !important;
+  background: $primary  !important;
+  color: $black  !important;
   border-radius: 25px;
   padding: 7px 17px;
   border: 0;
@@ -104,8 +106,8 @@ ul {
 }
 
 .play-btn {
-  background: $white;
-  color: $primary1  !important;
+  background: $primary;
+  color: $black  !important;
   border-radius: 25px;
   padding: 5px 13px;
   width: 140px;
@@ -113,13 +115,13 @@ ul {
   align-items: center;
 
   svg {
-    color: $black;
+    color: $white;
   }
 }
 
 .play-btns {
-  background: $white;
-  color: $primary1  !important;
+  background: $primary;
+  color: $black  !important;
   border-radius: 25px;
   padding: 5px 24px;
   display: inline-block;
@@ -157,7 +159,7 @@ ul {
 
     .nav-link {
       position: relative;
-      color: $black;
+      color: $white;
       font-size: 14px;
 
       &::after {
@@ -175,7 +177,7 @@ ul {
 
       &.active::after,
       &:hover::after {
-        color: $black;
+        color: $white;
         width: 70%;
         transition: 0.5s all;
         opacity: 1;
@@ -190,13 +192,13 @@ ul {
 //Banner  design //
 .home-pages {
   .bane-desin {
-    background: linear-gradient(45deg, $primary1, $primary);
+    background: #000;
     height: 100%;
     padding: 20px 10px;
 
     .cont-des {
       .vr-line {
-        color: $white;
+        color: $black;
         margin: 10px 0;
 
         h6 {
@@ -205,10 +207,11 @@ ul {
           padding-left: 10px;
           font-size: 18px;
           text-transform: uppercase;
+          color: $white;
         }
 
         .vr {
-          background-color: $white;
+          background-color: $black;
           width: 2px;
           opacity: 1;
         }
@@ -324,8 +327,8 @@ ul {
         right: -12px;
         top: 12px;
         content: "";
-        background: $white;
-        box-shadow: 0px 10px 20px rgb(48 124 255 / 15%);
+        background: $black1;
+        box-shadow: 0px 10px 20px rgb(0 0 0 / 15%);
         border-radius: 8px;
         height: 100%;
         width: 100%;
@@ -360,12 +363,12 @@ ul {
 
   //entertaiment end //
   .founder-des {
-    background: #fe9d9e;
+    background: #1a1d24;
     padding: 30px 15px;
 
     .left-font {
       .fd-box {
-        background: linear-gradient(45deg, $primary1, $primary);
+        background: $black;
         color: $white;
         padding: 15px;
         border-radius: 10px;
@@ -377,7 +380,7 @@ ul {
     }
 
     .about-home {
-      background: linear-gradient(45deg, $primary1, $primary);
+      background: $black;
       color: $white;
       padding: 25px;
       border-radius: 10px;
@@ -441,7 +444,7 @@ ul {
 }
 
 .news-session {
-  box-shadow: 0px 10px 20px rgb(48 124 255 / 15%);
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 15%);
   border-radius: 8px;
 
   &:hover {
@@ -474,7 +477,7 @@ ul {
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
     line-height: 1.5;
-    color: $black  !important;
+    color: $white  !important;
   }
 }
 
@@ -490,12 +493,12 @@ ul {
     -webkit-line-clamp: 2;
     line-height: 1.8;
     opacity: 0.6;
-    color: $black  !important;
+    color: $white  !important;
 
   }
 
   .new-dates {
-    background: $primary;
+    background: $black1;
     border-radius: 5px;
     padding: 8px;
     position: absolute;
@@ -503,7 +506,7 @@ ul {
     right: 16px;
 
     h6 {
-      color: $white;
+      color: $primary;
       margin-bottom: 0;
     }
   }
@@ -515,14 +518,13 @@ ul {
 
 // footer design //
 .footer-design {
-  background: linear-gradient(45deg, $primary1, $primary);
+  background: #000;
   padding: 20px 10px;
   color: $white;
 
   .fote-design {
     img {
       width: 100px;
-      filter: invert(2);
     }
 
     li {
@@ -541,7 +543,7 @@ ul {
         padding: 0 5px;
 
         a {
-          color: $white;
+          color: $primary;
 
           svg {
             font-size: 20px;
@@ -579,7 +581,7 @@ ul {
     .carousel-indicators [data-bs-target] {
       width: 8px;
       height: 8px;
-      border: 3px solid $primary1;
+      border: 3px solid $primary;
       border-radius: 100%;
       padding: 1px;
       background-color: $primary;
@@ -591,7 +593,7 @@ ul {
       position: relative;
       overflow: hidden;
       border-radius: 8px;
-      background: rgb(235 52 52);
+      background: $primary;
       height: 250px;
 
       img {
@@ -606,7 +608,7 @@ ul {
         bottom: 0px;
         left: 0;
         padding: 19px;
-        color: #fff;
+        color: $white;
         width: 100%;
         height: 35%;
         transition: 0.5s all;
@@ -637,8 +639,6 @@ ul {
           font-family: "f2";
           font-size: 20px;
         }
-
-
 
         .play-design {
           text-align: center;
@@ -885,16 +885,17 @@ ul {
     }
 
     .proje-boxs {
-      background: $white;
-      box-shadow: 0px 10px 20px rgb(48 124 255 / 15%);
+      background: $black1;
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 15%);
       border-radius: 8px;
       text-align: center;
       padding: 25px;
-      border: 1px solid rgba(13, 110, 253, 0.25);
+      border: 1px solid rgba(0, 0, 0, 0.25);
       position: relative;
       overflow: hidden;
       transition: .4s all;
       height: 100%;
+      color: $white;
 
       .prj-img {
         width: 70%;
@@ -937,7 +938,7 @@ ul {
   .profi-box {
     img {
 
-      box-shadow: 0px 10px 20px rgba(48, 124, 255, 0.15);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
       padding: 10px;
       border-radius: 9px;
     }
@@ -984,11 +985,11 @@ ul {
       }
 
       .box-design {
-        box-shadow: 0px 10px 20px rgba(48, 124, 255, 0.15);
+        box-shadow: 0px 10px 20px rgba(168, 168, 168, 0.15);
         padding: 10px;
         border-radius: 9px;
         text-align: center;
-        border: 1px solid rgba(48, 124, 255, 0.25);
+        border: 1px solid rgba(168, 168, 168, 0.25);
 
         h4 {
           margin: 10px 0;
@@ -1058,10 +1059,10 @@ ul {
   }
 
   .recent-news {
-    box-shadow: 0px 10px 20px rgba(48, 124, 255, 0.15);
+    box-shadow: 0px 10px 20px rgba(168, 168, 168, 0.15);
     border-radius: 8px;
     padding: 10px;
-    border: 1px solid rgb(48 124 255 / 28%);
+    border: 1px solid rgb(0 0 0 / 28%);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -1139,7 +1140,7 @@ ul {
 }
 
 .test-design {
-  background: linear-gradient(45deg, $primary1, $primary);
+  background: $black;
   height: 100%;
   padding: 20px 10px;
   text-align: center;
@@ -1233,19 +1234,19 @@ ul {
 
     }
 
-
-
     .yout-vied {
-      box-shadow: 0px 10px 20px rgb(48 124 255 / 15%);
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 15%);
       border-radius: 8px;
       padding: 10px;
       transition: .5s all;
-      border: 1px solid rgb(48 124 255 / 0%);
+      border: 1px solid rgb(0 0 0 / 0%);
+      background: #000;
+
 
       // height: 250px;
       // overflow: hidden;
       &:hover {
-        border: 1px solid rgb(48 124 255 / 35%);
+        border: 1px solid rgb(0 0 0 / 35%);
         transition: .5s all;
       }
 
@@ -1257,7 +1258,7 @@ ul {
       h5 {
         margin-top: 10px;
         text-align: center;
-        color: $black;
+        color: $white;
         font-family: "f2";
       }
     }
@@ -1307,13 +1308,13 @@ ul {
   }
 
   .auditions-session {
-    box-shadow: 0px 10px 20px rgba(48, 124, 255, 0.15);
+    box-shadow: 0px 10px 20px rgba(168, 168, 168, 0.15);
     border-radius: 8px;
     padding: 10px 14px;
-    border: 1px solid rgba(48, 124, 255, 0.15);
+    border: 1px solid rgba(168, 168, 168, 0.15);
 
     &:hover {
-      border: 1px solid rgb(48 124 255 / 35%);
+      border: 1px solid rgb(0 0 0 / 35%);
 
       img {
         transform: scale(1.2);
@@ -1400,7 +1401,7 @@ ul {
 
   .form-control {
     padding: 12px 15px;
-    box-shadow: 0px 10px 40px rgb(48 124 255 / 15%);
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 15%);
     font-size: 13px;
     border: 0;
   }
@@ -1439,14 +1440,14 @@ ul {
 // carrer design //
 .care-page {
   .carer-design {
-    box-shadow: 0px 10px 40px rgb(48 124 255 / 15%);
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 15%);
     padding: 20px;
-    border: 1px solid rgb(48 124 255 / 0%);
+    border: 1px solid rgb(0 0 0 / 0%);
     border-radius: 10px;
     transition: .3s all;
 
     &:hover {
-      border: 1px solid rgb(48 124 255 / 35%);
+      border: 1px solid rgb(0 0 0 / 35%);
       transition: .3s all;
     }
 
@@ -1552,7 +1553,7 @@ ul {
     .login-form {
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0px 10px 40px rgb(48 124 255 / 15%);
+      box-shadow: 0px 10px 40px rgb(0 0 0 / 15%);
       padding: 20px;
       text-align: center;
 

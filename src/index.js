@@ -6,7 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./constants/redux/store";
+// import store from "./constants/redux/store";
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -23,11 +23,11 @@ const root = document.getElementById("root");
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
+
+    <Router>
+      <App />
+    </Router>
+
   </React.StrictMode>,
   root
 );
